@@ -30,7 +30,7 @@ DataV-Charts 0.0.1
 本组件是带长周期小时间轴的TimeLine组件，最多支持三条曲线同时显示，具有非常丰富的功能和配置。
 
 #### 数据格式
-
+```js
     {
       "trends": [
         [41701, 41398, 42516, .......,  30307, 31078, 32483, 33962, 34363, 33021, 32563, 30821, 30711],
@@ -52,7 +52,7 @@ DataV-Charts 0.0.1
       "queries": ["ipad"],
       "types": ["A指数", "B指数"]
     };
-
+```
 其中：
 * trends为实际的数据，是一个二维数组，其中第一维表示不同种类的数据，最多为三项。第二维是实际的数据值，时间间隔为天；
 * dates为横坐标中的日期项，格式为yyyy-MM-dd，从逻辑上，trends的每一维度的数据长度和dates的数据长度应该都是相同的；
@@ -64,16 +64,16 @@ DataV-Charts 0.0.1
   后者存在两个时会使用不同的时间轴。
 
 #### 配置项及其默认值
-
+```js
     lineColors = ["#3391d4", "#fe8f00", "#4d4d4d"] // 三条曲线的颜色
     gridColor = '#cccccc'                          // 坐标线的颜色
     backgroundColor = '#f2f2f2'                    // 图表背景色
     start = 1                                      // 短周期数据起始月数 (到长周期数据最后一个月的月数差)
     end = 0                                        // 短周期数据终止月数 (到长周期数据最后一个月的月数差)
     gridDash = '--'                                // 网格线的类型，为null时是直线，'.' '--'等为不同的虚线
-
+```
 #### 使用方法
-
+```js
       $(function () {
         var map = new window.shuCharts.Timeline($('.timelinebox')[0]);
         // 数据
@@ -100,7 +100,7 @@ DataV-Charts 0.0.1
         var opt = {start: 3, end: 0};
         map.render(data, opt);
       });
-
+```
 详见examples/timeline.html
 
 #### 效果图
@@ -112,9 +112,11 @@ DataV-Charts 0.0.1
 本组件是利用不用省份的颜色深浅不同来表述各个省区的数据大小。
 
 #### 数据格式
+```js
     [{"name": "广东", "value": 152166, "rate": 11.46825740760978, "rank": 1},
     .........
     {"name": "内蒙古", "value": 23, "rate": 0.00000002342, "rank": 35}]
+```
 
 其中：
 * name为省份名称，为了在项目中的统一，请均使用中文名，并不要加上‘省’或‘市’的字样；
@@ -123,14 +125,14 @@ DataV-Charts 0.0.1
 * rank为排名；
 
 #### 配置项及其默认值
-
+```js
    hoverColor = "#cabee9"  // 鼠标移到省份上时的显示
    maxColor = '#007aff'    // 省份颜色的最大值
    minColor = '#cfebf7'    // 省份颜色的最小值
    colorNum = 7            // 省份颜色的分级
-
+```
 #### 使用方法
-
+```js
     $(function () {
         var map = new window.shuCharts.Map($('.mapbox')[0]); // 组件的大小会根据容器大小自适应，但Map组件不应小于350*350px
         // 数据
@@ -147,7 +149,7 @@ DataV-Charts 0.0.1
         var opts = {colorNum: 8};
         map.render(data, opts);
     });
-
+```
 详见examples/map.html
 
 #### 效果图
