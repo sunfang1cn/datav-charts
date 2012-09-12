@@ -15,7 +15,7 @@ DataV-Charts 0.0.1
 本项目公共依赖有：
 * [Raphaeljs](http://raphaeljs.com/) >= 1.5.6
 * [JQuery](http://jquery.com/) >= 1.6.0
-* [jquery.tooltip]
+* jquery.tooltip by zolunX10
 
 除此之外，TimeLine组件还依赖：
 * [g.Raphael](http://g.raphaeljs.com) >= 0.5.0
