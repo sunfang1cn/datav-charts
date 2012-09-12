@@ -3,44 +3,9 @@
     z-index: 100;
     overflow: visible;
     background-color: #ffffff;
-    padding: 5px;
+    padding: 2px;
     font-size: 12px;
     border: 1px solid #000000;
     border-radius: 5px;
 }
 
-.tooltip-corner {
-    width: 0;
-    height: 0;
-    line-height: 0;
-    position: absolute;
-    border-width: 6px;
-    border-color: transparent;
-    z-index: 110;
-}
-
-.middle-right .tooltip-corner {
-    top: 45%;
-    left: -12px;
-    border-style: dashed solid dashed dashed;
-}
-
-.middle-left .tooltip-corner {
-    top: 45%;
-    right: -12px;
-    left: auto;
-    border-style: dashed dashed dashed solid;
-}
-
-.bottom-middle .tooltip-corner {
-    border-style: dashed dashed solid dashed;
-    top: -12px;
-    left: 45%;
-}
-
-.top-middle .tooltip-corner {
-    border-style: solid dashed dashed dashed;
-    bottom: -12px;
-    top: auto;
-    left: 45%;
-}
