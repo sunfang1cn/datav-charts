@@ -1,0 +1,59 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <script type="text/javascript" src="../deps/jquery-1.7.2.js"></script>
+  <script type="text/javascript" src="../deps/jquery.tooltip.js"></script>
+  <script type="text/javascript" src="../deps/raphael.js"></script>
+  <link type="text/css" rel="stylesheet" href="../css/tooltip.css"/>
+  <link type="text/css" rel="stylesheet" href="./style.css"/>
+  <script type="text/javascript" src="../lib/map.js"></script>
+</head>
+<body>
+<div class='mapbox'>
+  &nbsp;
+</div>
+<script type="text/javascript">
+  $(function () {
+    var map = new window.shuCharts.Map($('.mapbox')[0]);
+    var data = [
+      {"name": "广东", "value": 152166, "rate": 11.46825740760978, "rank": 1},
+      {"name": "浙江", "value": 133696, "rate": 10.076233471128882, "rank": 2},
+      {"name": "江苏", "value": 131292, "rate": 9.895051795801319, "rank": 3},
+      {"name": "上海", "value": 104212, "rate": 7.8541201119949955, "rank": 4},
+      {"name": "北京", "value": 83888, "rate": 6.3223662145917565, "rank": 5},
+      {"name": "山东", "value": 70809, "rate": 5.33664444603552, "rank": 6},
+      {"name": "海外", "value": 58659, "rate": 4.420938391447381},
+      {"name": "福建", "value": 49211, "rate": 3.7088733047190896, "rank": 8},
+      {"name": "河北", "value": 45211, "rate": 3.407406290862912, "rank": 9},
+      {"name": "辽宁", "value": 45116, "rate": 3.400246449283827, "rank": 10},
+      {"name": "四川", "value": 42573, "rate": 3.2085887952247627, "rank": 11},
+      {"name": "湖北", "value": 38012, "rate": 2.864841032675256, "rank": 12},
+      {"name": "河南", "value": 37240, "rate": 2.8066578990010136, "rank": 13},
+      {"name": "安徽", "value": 35139, "rate": 2.6483123499730565, "rank": 14},
+      {"name": "天津", "value": 33806, "rate": 2.5478484676054856, "rank": 15},
+      {"name": "湖南", "value": 30621, "rate": 2.3078053578225037, "rank": 16},
+      {"name": "黑龙江", "value": 27123, "rate": 2.0441724542052766, "rank": 17},
+      {"name": "广西", "value": 24900, "rate": 1.8766321612547057, "rank": 18},
+      {"name": "陕西", "value": 23588, "rate": 1.7777509807098795, "rank": 19},
+      {"name": "吉林", "value": 22875, "rate": 1.7240144854900157, "rank": 20},
+      {"name": "重庆", "value": 22649, "rate": 1.7069815992071418, "rank": 21},
+      {"name": "山西", "value": 21307, "rate": 1.6058394160583942, "rank": 22},
+      {"name": "江西", "value": 20536, "rate": 1.547731649137616, "rank": 23},
+      {"name": "云南", "value": 19049, "rate": 1.4356612867365819, "rank": 24},
+      {"name": "贵州", "value": 17864, "rate": 1.3463516838816894, "rank": 25},
+      {"name": "新疆", "value": 9707, "rate": 0.731585075875479, "rank": 26},
+      {"name": "甘肃", "value": 7641, "rate": 0.5758773632187633, "rank": 27},
+      {"name": "海南", "value": 5841, "rate": 0.4402172069834833, "rank": 28},
+      {"name": "香港", "value": 4370, "rate": 0.329352712637874, "rank": 29},
+      {"name": "宁夏", "value": 2909, "rate": 0.2192418858269052, "rank": 30},
+      {"name": "台湾", "value": 1699, "rate": 0.12804811413541145, "rank": 31},
+      {"name": "青海", "value": 1512, "rate": 0.11395453123763515, "rank": 32},
+      {"name": "西藏", "value": 1118, "rate": 0.08426003037280165, "rank": 33},
+      {"name": "澳门", "value": 506, "rate": 0.03813557725280647, "rank": 34},
+      {"name": "内蒙古", "value": 0, "rate": 0, "rank": 35}
+    ];
+    map.render(data);
+  });
+</script>
+</body>
+</html>
