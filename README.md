@@ -75,7 +75,7 @@ DataV-Charts 0.0.1
 #### 使用方法
 ```js
       $(function () {
-        var map = new window.shuCharts.Timeline($('.timelinebox')[0]);
+        var map = new window.shuCharts.Timeline($('.timelinebox')[0]); // 组件的大小会根据容器大小自适应，但TimeLine组件不应小于400*250px
         // 数据
         var data =
         {"trends": [
